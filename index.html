@@ -4,13 +4,181 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="Home.css">
+
+  <!-- nav_button -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap" rel="stylesheet">
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+
     <title>Home </title>
     <link rel="stylesheet" href="Home.css">
 </head>
-<body>
-    <img class="Background" src="Images/BG.jpg">
+<body data-spy="scroll" data-target="#navbar-example">
+  <!-- button nav -->
+<div class="wrapper2">
+
+  <div class="container">
+    <div class="bars"></div>
+  </div>
+
+  <!-- <h1>Animated Nav With GSAP 3.0</h1> -->
+  <nav class="nav_ani" id="nav_ani">
+    <h2>TAARANGANA</h2>
+    <div class="close">
+      <div></div>
+    </div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <script type="text/javascript">
+    
+    const open = document.querySelector('.container');
+    const close = document.querySelector('.close');
+    var tl = gsap.timeline({ defaults: { duration: 0.5, ease: 'expo.inOut' } });
+    open.addEventListener('click', () => {
+      if (tl.reversed()) {
+        tl.play();
+      } else {
+        tl.to('.nav_ani', { right: 0 })
+          .to('.nav_ani', { height: '100vh' }, '-=.1')
+          .to('.nav_ani ul li a', { opacity: 1, pointerEvents: 'all', stagger: .2 }, '-=.8')
+          .to('.close', { opacity: 1, pointerEvents: 'all' }, "-=.8")
+          .to('.nav_ani h2', { opacity: 1 }, '-=1');
+      }
+    });
+
+    close.addEventListener('click', () => {
+      tl.reverse();
+    });
+  </script>
+</div>
+
+
+    <!-- ADD CONTENT IN EACH SECTION ACCORDING TO PAGE -->
+
+
+  <div class="wrapper" >
+
+    <nav class="nav__wrapper" id="navbar-example">
+      <ul class="nav">
+
+        <li role="presentation" class="active">
+          <a href="#section1">
+            <span class="nav__counter">01</span>
+            <h3 class="nav__title">Intro</h3>
+            <p class="nav__body"><strong>Timeline-style navigation</strong>. Scroll down to see what happens, or click on a number in the nav.</p>
+          </a>
+        </li>
+
+        <li role="presentation">
+          <a   href="#section2">
+            <span class="nav__counter">02</span>
+            <h3 class="nav__title">Section 2 Title</h3>
+            <p class="nav__body">Sed sit amet justo sed odio tempus tempus. Vestibulum sed varius mi, sit amet condimentum lacus.</p>
+          </a>
+        </li>
+
+        <li role="presentation">
+          <a   href="#section3">
+            <span class="nav__counter">03</span>
+            <h3 class="nav__title">Section 3 Title</h3>
+            <p class="nav__body">Sed sit amet justo sed odio tempus tempus. Vestibulum sed varius mi, sit amet condimentum lacus.</p>
+          </a>
+        </li>
+        
+        <li role="presentation">
+          <a  href="#section4">
+            <span class="nav__counter">04</span>
+            <h3 class="nav__title">Section 4 Title</h3>
+            <p class="nav__body">Sed sit amet justo sed odio tempus tempus. Vestibulum sed varius mi, sit amet condimentum lacus.</p>
+          </a>
+        </li>
+        
+        <li  role="presentation">
+          <a href="#section5">
+            <span class="nav__counter">05</span>
+            <h3 class="nav__title">Section 5 Title</h3>
+            <p class="nav__body">
+            Sed sit amet justo sed odio tempus tempus. Vestibulum sed varius mi, sit amet condimentum lacus.</p>
+          </a>
+        </li>
+        
+        <li  role="presentation">
+          <a href="#section6">
+            <span class="nav__counter">06</span>
+            <h3 class="nav__title">Section 6 Title</h3>
+            <p class="nav__body">Sed sit amet justo sed odio tempus tempus. Vestibulum sed varius mi, sit amet condimentum lacus.</p>
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+
+
+    
+
+    <section class="section section1" id="section1" >
+      <!-- <img class="Background" src="Images/BG.jpg"> -->
     <div class="sign">
+       
       <span class="fast-flicker">taa</span>ran<span class="flicker">ga</span>na
     </div>
+     
+
+
+    </section>
+
+
+    <section class="section section2" id="section2">
+      Section 2
+    </section>
+
+    <section class="section section3" id="section3">
+      Section 3
+    </section>
+
+    <section class="section section4" id="section4">
+      Section 4
+    </section>
+
+    <section class="section section5" id="section5">
+      Section 5
+    </section>
+
+    <section class="section section6" id="section6">
+      Section 6
+    </section>
+
+
+  </div>
+  <script>
+
+    <!---code for smooth scrolling sections--->
+    $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    }
+});
+  </script>
 </body>
 </html>
