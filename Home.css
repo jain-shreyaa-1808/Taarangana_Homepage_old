@@ -268,13 +268,13 @@ section:nth-child(4) {
 section:nth-child(5) {
   background: #9B59B6;
 }
-section:nth-child(6) {
+/*section:nth-child(6) {
   background: #03C9A9;
 }
 section:nth-child(7) {
   background: #ffcc00;
 }
-
+*/
 .nav__wrapper {
   position: fixed;
   height: 100%;
@@ -295,7 +295,7 @@ section:nth-child(7) {
 }
 .nav__title {
   font-size: 2em;
-  font-weight: 300;
+  font-weight: 400;
   margin: 0 0 0.25em;
   width: 300px;
   height: 0;
@@ -304,7 +304,7 @@ section:nth-child(7) {
   transition: height 0.3s ease-out, opacity 0.2s ease-out;
 }
 .nav__body {
-/*  visibility: hidden;*/
+  visibility: hidden;
   font-weight: 100;
   font-size: 18px;
   font-size: 1.2em;
@@ -397,6 +397,7 @@ section:nth-child(7) {
   left: -15px;
 }
 .nav li.active .nav__counter {
+  visibility: hidden;
   font-size: 48px;
 }
 .nav li.active .nav__title {
