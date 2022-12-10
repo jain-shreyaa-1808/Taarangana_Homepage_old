@@ -250,7 +250,7 @@ section:nth-child(1) {
 background: white;
 }
 section:nth-child(2) {
-  background-image: url('Images/BG.jpg');
+  background-image: url('Images/bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 
