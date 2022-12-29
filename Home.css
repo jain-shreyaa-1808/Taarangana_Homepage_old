@@ -700,3 +700,11 @@ h1 {
   }
 }
 
+
+.videowrapper {
+  position: relative;
+  left: 50px;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0px; 
+}
