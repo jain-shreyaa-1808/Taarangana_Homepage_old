@@ -275,6 +275,9 @@ section:nth-child(7) {
   background: #ffcc00;
 }
 */
+
+
+/*side nav z-index:10*/
 .nav__wrapper {
   position: fixed;
   height: 102vh;
@@ -282,6 +285,7 @@ section:nth-child(7) {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
+  z-index: 10;
 }
 .nav {
   margin: 0 0 0px 20px;
@@ -420,13 +424,15 @@ section:nth-child(7) {
   padding: 0;
   box-sizing: border-box;
 }
+
+/*nav button z-index:11*/
 .wrapper2 {
 /*  min-height: 100vh;*/
   font-family: "Roboto Slab", serif;
   font-weight: 300;
 /*  color: #fff;*/
   position: fixed;
-  z-index: 1;
+  z-index: 11;
   width:100vw;
 }
 
