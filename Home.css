@@ -700,22 +700,3 @@ h1 {
   }
 }
 
-
-
-.videowrapper {
-  position: relative;
-  left: 50px;
-  padding-bottom: 56.25%;
-  padding-top: 25px;
-  height: 0px;
-}
-
-.videowrapper iframe {
-  position: absolute;
-  left: 100px;
-  top: 50px;
-  right: 50px;
-  bottom: 50px;
-  height: 70%;
-  width: 70%;
-}
