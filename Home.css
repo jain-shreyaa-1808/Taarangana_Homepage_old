@@ -701,21 +701,35 @@ h1 {
 }
 
 
-.videowrapper {
-  position: relative;
-  left: 50px;
-  padding-bottom: 56.25%;
-  padding-top: 25px;
-  height: 0px; 
+
+.section-2_para
+{
+  font-family: cursive !important;
+    font-size: 17px!important;
+    position:absolute;
+    left:200px;
+    top: 50px;
+    right: 200px;
+    bottom: 350px;
+  
+}
+.backvideo{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
+@media (min-aspect-ratio: 16/9){
+  .backvideo{
+    width: 100%;
+    height: 100%;
+  }
+}
 
-.videowrapper iframe {
-  position: absolute;
-  left: 100px;
-  top: 50px;
-  right: 50px;
-  bottom: 50px;
-  height: 70%;
-  width: 70%;
+@media (max-aspect-ratio: 16/9){
+  .backvideo{
+    width: ;
+    height: 100%;
+  }
 }
