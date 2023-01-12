@@ -583,7 +583,7 @@ h1 {
 }
 .logo{
   border-radius: 50%;
-  position: absolute;
+  position: fixed;
   left: 17px;
   top: 25px;
 }
@@ -591,7 +591,7 @@ h1 {
 .logo_name{
   font-size: 0.4em;
   font-weight: 400;
-  position: absolute;
+  position: fixed;
   left: 63px;
   top: 35px;
 }
@@ -700,3 +700,37 @@ h1 {
   }
 }
 
+.section-2_para
+  {
+    font-family: cursive !important;
+      font-size: 30px!important;
+      position:absolute;
+      left:250px;
+      top: 1250px;
+      right: 200px;
+     /* text-align: center;*/
+      /*bottom: 750px;*/
+    
+  }
+
+  .videowrapper{
+      position: relative;
+      /*width: 100%;
+      height: 900px;*/
+      left: 0px;
+      right: 0px;
+      padding-top: 10px;
+      padding-bottom: 0px;
+      opacity: 0.5;
+      object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  /*position: fixed;*/
+  }
+
+  /*object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
