@@ -2,10 +2,14 @@
     position: relative;
     padding: 0px;
     margin: 0px;
-    overflow: hidden;
+    
     height: 100vh;
     width: 100vw;
 }*/
+body,html{
+width: 100%;
+overflow-x: hidden;
+}
 @font-face {
   font-family: Clip;
   src: url("https://acupoftee.github.io/fonts/Clip.ttf");
@@ -225,8 +229,27 @@
     opacity: 1;
   }
 }
-
-
+.contain-video { position:relative; }
+.about-video
+{
+  position: absolute;
+  object-fit: cover;
+}
+.overlay-about {
+  position:absolute;
+   top:18%;
+   left:8%;
+   z-index:0;
+ }
+ 
+ .overlay-about p {
+   color: white;
+   font-size: 20px;
+   align-self: center;
+   margin:28% 12%;
+   width:70%;
+   height: 100%;
+ }
 /*navbar css*/
 
 .wrapper {
@@ -238,17 +261,18 @@
 }
 
 section {
-  height: 100vh;
+  height: 130vh;
   font-size: 40px;
   font-weight: 100;
-  background-color: #22A7F0;
+  /* background-color: #22A7F0; */
   display: flex;
   justify-content: center;
-align-items: center;
+  align-items: center;
 }
 section:nth-child(1) {
 background: white;
 }
+
 section:nth-child(2) {
   background-image: url('Images/bg.jpg');
   background-repeat: no-repeat;
@@ -261,6 +285,7 @@ section:nth-child(2) {
 }
 section:nth-child(3) {
   background: #000000;
+  
 }
 section:nth-child(4) {
   background: #F9690E;
@@ -703,11 +728,13 @@ h1 {
 .section-2_para
   {
     font-family: cursive !important;
-      font-size: 30px!important;
-      position:absolute;
-      left:250px;
-      top: 1250px;
-      right: 200px;
+      font-size: 25px!important;
+      justify-content: center;
+      /* margin-top: 250px; */
+      /* position:relative; */
+      /* margin-left:50px;
+      margin-top: 50px;
+      margin-right:0px; */
      /* text-align: center;*/
       /*bottom: 750px;*/
     
@@ -734,3 +761,10 @@ h1 {
   position: fixed;
   top: 0;
   left: 0;
+  */
+  @media only screen and (max-width: 800px) {
+    section:nth-child(3)
+    {
+      height:1350px;
+    }
+  }
