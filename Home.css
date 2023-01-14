@@ -768,3 +768,7 @@ h1 {
       height:1350px;
     }
   }
+
+@media only screen and (max-width: 600px) {
+  /* styles for mobile view */
+}
