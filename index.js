@@ -1,9 +1,11 @@
 //global variables:
-var radius = 290; // how big of the radius
+var screen_width=screen.width;
+var screen_height=screen.height;
+var radius = screen_width*0.3; // how big of the radius
 var autoRotate = true; // auto rotate or not
 var rotateSpeed = -50; // unit: seconds/360 degrees
-var imgWidth = 250; // width of images (unit: px)
-var imgHeight = 300; // height of images (unit: px)
+var imgWidth = screen_width*0.25; // width of images (unit: px)
+var imgHeight = screen_height*0.275; // height of images (unit: px)
 
 // Link of background music - set 'null' if you dont want to play background music
 var bgMusicURL = 'https://api.soundcloud.com/tracks/143041228/stream?client_id=587aa2d384f7333a886010d5f52f302a';
