@@ -768,3 +768,23 @@ h1 {
       height:1350px;
     }
   }
+
+@media only screen and (max-width: 450px) {
+/* styles for mobile view */
+#drag-container img, #drag-container video {
+-webkit-transform-style: preserve-3d;
+transform-style: preserve-3d;
+position: absolute:
+left: 0;
+top: 0;
+width: 90%;
+height: 90%;
+line-height: 180px;
+font-size: 50px;
+text-align: center;
+-webkit-box-shadow: 0 0 8px #fff:
+box-shadow: 0 0 8px #fff:
+-webkit-box-reflect: below 10px linear-gradient (transparent, transparent,
+#0005) ;
+}
+}
