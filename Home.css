@@ -302,6 +302,7 @@ section:nth-child(7) {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
+  z-index: 998;
 }
 .nav {
   margin: 0 0 0px 20px;
@@ -446,7 +447,7 @@ section:nth-child(7) {
   font-weight: 300;
 /*  color: #fff;*/
   position: fixed;
-  z-index: 1;
+  z-index: 1000;
   width:100vw;
 }
 
@@ -725,8 +726,8 @@ h1 {
 .overlay-about {
   position:absolute;
    top:100vh;
-   left:8%;
-   right: 8%;
+   left:10%;
+   right: 10%;
    z-index:0;
    display: flex;
    align-content: center;
@@ -739,7 +740,7 @@ h1 {
 /*  left: 50vw;*/
   font-family: cursive;
   transform: translate(0%,-50%);
-  font-size: 0.7em;
+  font-size: 2.5vh;
 
  }
 .section-2_para
