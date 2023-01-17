@@ -835,6 +835,7 @@ h1 {
 /*  left: 50vw;*/
 /*  font-family: cursive;*/
   transform: translate(0%,-50%);
+  margin: 0% 5%;
   font-size: 2.5vh;
   font-weight: 400;
 
