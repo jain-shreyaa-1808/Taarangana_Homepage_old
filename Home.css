@@ -312,16 +312,16 @@ section:nth-child(1) {
 background: white;
 }
 
-/* section:nth-child(2) {
+section:nth-child(2) {
   background-image: url('Images/bg.jpg');
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover;
 
 /*  overflow: hidden;*/
     /*height: 100vh;
     width: 100vw;*/
 /* background: #F64747;*/
-/* } */
+}
 section:nth-child(3) {
   background: #000000;
   
