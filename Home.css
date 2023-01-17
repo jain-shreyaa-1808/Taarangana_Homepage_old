@@ -35,9 +35,20 @@ overflow-x: hidden;
   background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
 }*/
 
+/*section-1 responsiveness*/
+@media (max-width: 992px){
+.theme{
+  justify-content: center;
+  text-align: center;
+  font-size: 8vw;
+}}
+
+@media (max-width: 992px){
+  
 .sign {
 /* position: absolute;*/
   display: flex;
+  margin: auto;
   justify-content: center;
  align-items: center;
   width: 0%;
@@ -53,9 +64,42 @@ overflow-x: hidden;
   top: 50%;
   font-family: "Clip";
   text-transform: uppercase;
-  font-size: 6vw;
+  font-size: 11vw;
   color: #f7f0f7;
   text-shadow: 0 0 0.6rem #f7f0f7, 0 0 1.5rem #dbd7db,
+    -0.2rem 0.1rem 1rem #dbd7db, 0.2rem 0.1rem 1rem #dbd7db,
+    0 -0.5rem 2rem #9e989b, 0 0.5rem 3rem #9e989b;
+  animation: shine 2s forwards, flicker 3s infinite;
+}
+}
+  .theme{
+    justify-content: center;
+    text-align: center;
+    font-size: 4vw;
+  }
+    
+  .sign {
+  /* position: absolute;*/
+    display: flex;
+    margin: auto;
+    justify-content: center;
+   align-items: center;
+    width: 0%;
+    height: 0%;
+    background-image: radial-gradient(
+      ellipse 50% 35% at 50% 50%,
+      #2b2a2b,
+      transparent
+    );
+    transform: translate(-50%, -50%);
+    letter-spacing: 2;
+    left: 50%;
+    top: 50%;
+    font-family: "Clip";
+    font-size: 8vw;
+    text-transform: uppercase;
+    color: #f7f0f7;
+    text-shadow: 0 0 0.6rem #f7f0f7, 0 0 1.5rem #dbd7db,
     -0.2rem 0.1rem 1rem #dbd7db, 0.2rem 0.1rem 1rem #dbd7db,
     0 -0.5rem 2rem #9e989b, 0 0.5rem 3rem #9e989b;
   animation: shine 2s forwards, flicker 3s infinite;
