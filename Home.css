@@ -437,6 +437,33 @@ section:nth-child(7) {
 
 }
 
+.nav li:first-child.active:after{
+  content:"Home";
+  width: fit-content;
+  border-radius: 0;
+  padding: 2px 2px;
+}
+.nav li:nth-child(2).active:after{
+  content:"About Us";
+  width: fit-content;
+  border-radius: 0;
+  padding: 2px 2px;
+  white-space: nowrap;
+}
+
+.nav li:nth-child(3).active:after{
+  content:"Glimpses";
+  width: fit-content;
+  border-radius: 0;
+  padding: 2px 2px;
+}
+.nav li:nth-child(4).active:after{
+  content:"Title";
+  width: fit-content;
+  border-radius: 0;
+  padding: 2px 2px;
+}
+
 
 .nav li a {
   display: block;
@@ -461,6 +488,21 @@ section:nth-child(7) {
   top: 35px;
   left: -15px;
 }
+/*.nav li:first-child.active :after { 
+  content: "abc";
+  width: 30px;
+  height: 30px;
+  top: 35px;
+  left: -15px;
+}*/
+
+/*.nav li.active:after {
+  content: "About us";
+  width: 30px;
+  height: 30px;
+  top: 35px;
+  left: -15px;
+}*/
 .nav li.active .nav__counter {
   visibility: hidden;
   font-size: 48px;
@@ -469,6 +511,7 @@ section:nth-child(7) {
   height: 40px;
   opacity: 1;
   overflow: visible;
+  visibility: hidden;
 }
 .nav li.active .nav__body {
   height: 100px;
@@ -767,6 +810,7 @@ h1 {
   }
 }
 
+/*------------------About section starts-------------*/
 .overlay-about {
   position:absolute;
    top:100vh;
@@ -855,3 +899,5 @@ h1 {
       font-size: 0.4em;
     }
   }
+
+/* ----About section ends------------- */
