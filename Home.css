@@ -17,9 +17,9 @@ overflow-x: hidden;
 .video-1
 {
   
-      filter:contrast(150%);
       width: 100%;
       height: inherit;
+      filter:contrast(150%);
       -o-object-fit: cover;
        object-fit: cover;
 }
