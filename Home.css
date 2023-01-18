@@ -16,13 +16,10 @@ overflow-x: hidden;
 }
 .video-1
 {
-      height: inherit;
-<<<<<<< HEAD
-      width:100%;
+  
       filter:contrast(150%);
-=======
-      width:100%;  
->>>>>>> 82ed74a4e875776cd81bbc7c65a039dd9485e531
+      width: 100%;
+      height: inherit;
       -o-object-fit: cover;
        object-fit: cover;
 }
