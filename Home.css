@@ -17,6 +17,7 @@ overflow-x: hidden;
 .video-1
 {
       height: inherit;
+      width:100%;  
       -o-object-fit: cover;
        object-fit: cover;
 }
