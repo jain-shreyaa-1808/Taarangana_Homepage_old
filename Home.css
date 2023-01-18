@@ -17,6 +17,8 @@ overflow-x: hidden;
 .video-1
 {
       height: inherit;
+      width:100%;
+      filter:contrast(150%);
       -o-object-fit: cover;
        object-fit: cover;
 }
@@ -52,7 +54,7 @@ overflow-x: hidden;
 {
   .sign
   {
-    height: 12rem;
+    height: 10rem;
   }
 }
 @media (max-width: 992px){
