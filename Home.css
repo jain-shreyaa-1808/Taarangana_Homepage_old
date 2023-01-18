@@ -16,7 +16,8 @@ overflow-x: hidden;
 }
 .video-1
 {
-    -o-object-fit: cover;
+      height: inherit;
+      -o-object-fit: cover;
        object-fit: cover;
 }
 /*added it to section 1*/
@@ -47,7 +48,13 @@ overflow-x: hidden;
   text-align: center;
   font-size: 8vw;
 }}
-
+@media(min-width:992px)
+{
+  .sign
+  {
+    height: 12rem;
+  }
+}
 @media (max-width: 992px){
   
 .sign {
@@ -66,7 +73,6 @@ overflow-x: hidden;
   transform: translate(-50%, -50%);
   letter-spacing: 2;
   left: 50%;
-  /* top: 50%; */
   font-family: "Clip";
   text-transform: uppercase;
   font-size: 11vw;
@@ -79,20 +85,24 @@ overflow-x: hidden;
 }
   .theme{
     position: absolute;
-    justify-content: center;
+    justify-content: flex-start;;
     text-align: center;
     z-index: 5;
-    font-size: 3vw;
+    font-size: 2.5vw;
+    margin-top: 0;
+    margin-bottom: 10rem;
+    top: 50pz;
   }
     
   .sign {
   /* position: absolute;*/
     display: flex;
     margin: auto;
+    flex-direction: row;
     justify-content: center;
-   align-items: center;
+    align-items:inherit;
     width: 0%;
-    height: 0%;
+    /* height:12rem; */
     background-image: radial-gradient(
       ellipse 50% 35% at 50% 50%,
       #2b2a2b,
@@ -101,7 +111,7 @@ overflow-x: hidden;
     transform: translate(-50%, -50%);
     letter-spacing: 2;
     left: 50%;
-    top: 50%;
+    top: 80%;
     font-family: "Clip";
     font-size: 8vw;
     text-transform: uppercase;
@@ -331,6 +341,7 @@ background: white;
 /* } */
 section:nth-child(3) {
   background: #000000;
+  
   
 }
 section:nth-child(4) {
@@ -826,6 +837,7 @@ h1 {
    z-index:0;
    display: flex;
    align-content: center;
+   justify-content: center;
    height: inherit;
  }
 
@@ -838,6 +850,7 @@ h1 {
   margin: 0% 5%;
   font-size: 2.5vh;
   font-weight: 400;
+  /* height: inherit; */
 
  }
 .section-2_para
@@ -905,6 +918,7 @@ h1 {
 
     .sec2para{
       font-size: 0.4em;
+      height: inherit;
     }
   }
 
