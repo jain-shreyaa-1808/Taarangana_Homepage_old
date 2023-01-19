@@ -79,10 +79,8 @@ overflow-x: hidden;
   font-family: "Clip";
   text-transform: uppercase;
   font-size: 11vw;
-  color: #f7f0f7;
-  text-shadow: 0 0 0.6rem #f7f0f7, 0 0 1.5rem #dbd7db,
-    -0.2rem 0.1rem 1rem #dbd7db, 0.2rem 0.1rem 1rem #dbd7db,
-    0 -0.5rem 2rem #9e989b, 0 0.5rem 3rem #9e989b;
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
   animation: shine 2s forwards, flicker 3s infinite;
 }
 }
@@ -118,10 +116,8 @@ overflow-x: hidden;
     font-family: "Clip";
     font-size: 8vw;
     text-transform: uppercase;
-    color: #f7f0f7;
-    text-shadow: 0 0 0.6rem #f7f0f7, 0 0 1.5rem #dbd7db,
-    -0.2rem 0.1rem 1rem #dbd7db, 0.2rem 0.1rem 1rem #dbd7db,
-    0 -0.5rem 2rem #9e989b, 0 0.5rem 3rem #9e989b;
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
   animation: shine 2s forwards, flicker 3s infinite;
 }
 
@@ -130,19 +126,17 @@ overflow-x: hidden;
   22%,
   36%,
   75% {
-    color: #f7f0f7;
-    text-shadow: 0 0 0.6rem #f7f0f7, 0 0 1.5rem #dbd7db,
-      -0.2rem 0.1rem 1rem #dbd7db, 0.2rem 0.1rem 1rem #dbd7db,
-      0 -0.5rem 2rem #9e989b, 0 0.5rem 3rem #9e989b;
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
   }
   28%,
   33% {
-    color: #dbd7db;
+    color: #ffa500;
     text-shadow: none;
   }
   82%,
   97% {
-    color: #dbd7db;
+    color: #ffa500;
     text-shadow: none;
   }
 }
@@ -161,10 +155,8 @@ overflow-x: hidden;
     text-shadow: none;
   }
   100% {
-    color: #f7f0f7;
-    text-shadow: 0 0 0.6rem #f7f0f7, 0 0 1.5rem #dbd7db,
-      -0.2rem 0.1rem 1rem #dbd7db, 0.2rem 0.1rem 1rem #dbd7db,
-      0 -0.5rem 2rem #9e989b, 0 0.5rem 3rem #9e989b;
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
   }
 }
 
@@ -854,6 +846,9 @@ h1 {
   font-size: 2.5vh;
   font-weight: 400;
   /* height: inherit; */
+
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6;
 
  }
 .section-2_para
